@@ -123,6 +123,16 @@ vim.api.nvim_set_keymap('i', '[', '[]<Left>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '"', '""<Left>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', "'", "''<Left>", { noremap = true, silent = true })
 
+vim.keymap.set('v', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>Y', '"+yg_', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>yy', '"+yy', { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader>p', '"+p', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>P', '"+P', { noremap = true, silent = true })
+vim.keymap.set('v', '<leader>p', '"+p', { noremap = true, silent = true })
+vim.keymap.set('v', '<leader>P', '"+P', { noremap = true, silent = true })
+
 -- Function to map keys - Auto-close brackets and quotes
 local function map(mode, lhs, rhs, opts)
   local options = { noremap = true, silent = true }
